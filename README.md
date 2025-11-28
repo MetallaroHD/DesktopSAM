@@ -1,4 +1,4 @@
-BackgroundRemover is a C++ app implementing efficientvit-segmentanything.
+DesktopSAM is a C++ app implementing efficientvit-segmentanything.
 
 How to use:
 1) Download an encoder and the corresponding decoder from https://huggingface.co/mit-han-lab/efficientvit-sam/tree/main/onnx,
