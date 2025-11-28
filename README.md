@@ -4,9 +4,11 @@ How to use:
 1) Download an encoder and the corresponding decoder from https://huggingface.co/mit-han-lab/efficientvit-sam/tree/main/onnx,
    refer to https://huggingface.co/mit-han-lab/efficientvit-sam/blob/main/README.md for choosing the best model for your needs.
 2) Launch the application.
-3) Optional: launch [Test GPU] to check if your system is suitable for GPU computation. This may speed up the segmentation significantly.
-4) Set paths to the encoder/decoder and the image you wish to segment and select [Start].
-5) Select a point on the object you wish to segment and check the result preview. Once satisfied, press save to export the result image.
+3) Set paths to the encoder/decoder and select [Start].
+4) Load an image of your choice.
+5) The [Segment] button allows to pick a point on the image and start segmentation.
+6) Using the left/right mouse buttons you may manually select areas you want to save/discard.
+7) Once satisfied press [Save] to save the resulting image.
 
 Dependencies:
 1) Qt
