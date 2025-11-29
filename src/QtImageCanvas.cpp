@@ -116,7 +116,7 @@ void QtImageCanvas::mouseMoveEvent(QMouseEvent* e)
         return;
 
     if (mode == Drawing)
-        applyBrush(e->pos(), +1);
+        applyBrush(e->pos(), 1);
 
     else if (mode == Erasing)
         applyBrush(e->pos(), 0);

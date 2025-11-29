@@ -2,6 +2,7 @@
 #include <QFileInfo>
 #include <QWidget>
 #include <QFutureWatcher>
+#include <QStandardPaths>
 #include "Algorithm.h"
 #include "MainWindowGUI.h"
 
@@ -28,8 +29,10 @@ private:
     void OnSetupFinished();
     void OnSegmentFinished();
 
-    QString GetRecentFilePath() const 
+    QString GetRecentFilePath() const
     {
-        return QCoreApplication::applicationDirPath() + "/recent.ini";
-    }  
+        QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+        QDir().mkpath(path);
+        return path + "/recent.ini";
+    }
 };
